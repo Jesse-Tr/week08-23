@@ -45,11 +45,11 @@ const EventList = () => {
         });
     };
     return (
-    <Box mt={5}>
-    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
+    <Box mt={5} >
+    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} >
     {event &&
     event.map((event) => (
-    <Box
+    <Box backgroundColor="teal"
     p={3}
     boxShadow="2xl"
     shadow={"dark-lg"}
@@ -94,7 +94,8 @@ const EventList = () => {
     {event.status}
     </Badge>
     </Heading>
-    <Text>{event.description}</Text>
+    <Text>{event.event}</Text>
+    <Text>{event.date}</Text>
     </Box>
     ))}
     </SimpleGrid>

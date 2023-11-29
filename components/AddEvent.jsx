@@ -6,6 +6,7 @@ import { addEvent } from "../api/event";
 const AddEvent = () => {
     const [title, setTitle] = React.useState("");
     const [description, setDescription] = React.useState("");
+    const [date, setDate] = React.useState("");
     const [status, setStatus] = React.useState("pending");
     const [isLoading, setIsLoading] = React.useState(false);
     const toast = useToast();
@@ -24,12 +25,14 @@ const AddEvent = () => {
         const event = {
         title,
         description,
+        date,
         status,
         userId: user.uid,
     };
     await addEvent(event);
     setIsLoading(false);
     setTitle("");
+    setDate("");
     setDescription("");
     setStatus("pending");
     toast({ title: "Event created successfully", status: "success" });
@@ -41,6 +44,11 @@ const AddEvent = () => {
         placeholder="event"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        />
+        <Input
+        placeholder="Date"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
         />
         <Textarea
         placeholder="Description"
