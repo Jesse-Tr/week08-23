@@ -34,7 +34,7 @@ const Auth = () => {
     };
 
     return (
-        <Box display="flex" alignItems="center" justifyContent = "space-between">
+        <Box display="flex" alignItems="center" justifyContent = "space-between" >
            <Box>
                 <Link href="/add-todo">Add To Do</Link>
            </Box>

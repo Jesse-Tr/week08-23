@@ -49,7 +49,7 @@ const EventList = () => {
     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} >
     {event &&
     event.map((event) => (
-    <Box backgroundColor="teal"
+    <Box backgroundColor="#2d3b61"
     p={3}
     boxShadow="2xl"
     shadow={"dark-lg"}
