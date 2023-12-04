@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import {
     Box,
     Heading,
@@ -36,7 +38,7 @@ const TodoItem = ({itemData}) => {
             <Text>
                 {itemData.createdAt}
             </Text>
-            <a href="/" style={{ color: 'grey' }}>Return Home</a>
+            <Link href="/" style={{ color: 'grey' }}>Return Home</Link>
         </Box>
     );
 };

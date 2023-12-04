@@ -50,6 +50,7 @@ const EventList = () => {
     {event &&
     event.map((event) => (
     <Box backgroundColor="#2d3b61"
+    key={event}
     p={3}
     boxShadow="2xl"
     shadow={"dark-lg"}
