@@ -38,7 +38,7 @@ const TodoItem = ({itemData}) => {
             <Text>
                 {itemData.createdAt}
             </Text>
-            <Link href="/" style={{ color: 'grey' }}>Return Home</Link>
+            <Link href="/" style={{ color: 'white' }}>Return Home</Link>
         </Box>
     );
 };

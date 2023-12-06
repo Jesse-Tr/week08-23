@@ -1,11 +1,11 @@
 import { db } from "../firebase";
 import {collection,addDoc,updateDoc,doc,deleteDoc,} from "firebase/firestore";
 
-const addEvent = async ({ userId, title, description, status,date }) => {
+const addEvent = async ({ userId, title,date, description, status, }) => {
     try {
         await addDoc(collection(db, "event"), {
         user: userId,
-        event: title,
+        title: title,
         date: date,
         description,description,
         status: status,

@@ -50,6 +50,7 @@ const Auth = () => {
            <Box textAlign="right">
                 <Button onClick={() => toggleColorMode()}>
                     {colorMode == "dark" ? <FaSun /> : <FaMoon />}
+                    
                 </Button>
                 {" "}
                 {isLoggedIn && (
